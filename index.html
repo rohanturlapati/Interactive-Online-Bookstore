@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home - BookNest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="nav"></nav>
+<div class="hero">
+<h1>📚 Welcome to BookNest</h1>
+<p>Your favourite online bookstore</p>
+<input type="text" id="homeSearch" placeholder="Search books...">
+<button onclick="homeSearch()">Search</button>
+</div>
+<div class="container">
+<div class="box">
+<h2>Categories</h2>
+<div class="cats" id="categories"></div>
+</div>
+<h2>Featured Books</h2>
+<div class="grid" id="featured"></div>
+</div>
+<script src="script.js"></script>
+<script>
+showNav();
+homePage();
+</script>
+</body>
+</html>

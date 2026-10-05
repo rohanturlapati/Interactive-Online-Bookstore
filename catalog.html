@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Books - BookNest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav id="nav"></nav>
+<div class="container">
+<h2>Books Catalog</h2>
+<div class="filters">
+<input type="text" id="searchBox" placeholder="Search by title or author" onkeyup="filterBooks()">
+<select id="categoryFilter" onchange="filterBooks()"></select>
+</div>
+<div class="grid" id="bookList"></div>
+</div>
+<script src="script.js"></script>
+<script>
+showNav();
+catalogPage();
+</script>
+</body>
+</html>
